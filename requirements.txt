@@ -43,4 +43,4 @@ bandit==1.7.5
 gunicorn==21.2.0
 
 # WhatsApp Business API SDK
-whatsapp-business-python==0.0.10
+whatsapp-python>=0.0.8
