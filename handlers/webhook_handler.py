@@ -143,11 +143,16 @@ class AttendanceWebhookHandler:
             }, 503
             
         except Exception as e:
+            import traceback
+            error_traceback = traceback.format_exc()
             self.logger.error(f"Unexpected error processing attendance webhook: {e}")
+            self.logger.error(f"Full traceback: {error_traceback}")
+            print(f"DEBUG ERROR: {e}")
+            print(f"DEBUG TRACEBACK: {error_traceback}")
             return {
                 'success': False,
                 'error': 'Internal server error',
-                'message': 'An unexpected error occurred while processing the request'
+                'message': f'An unexpected error occurred while processing the request: {str(e)}'
             }, 500
     
     def handle_health_check(self) -> Tuple[Dict[str, Any], int]:

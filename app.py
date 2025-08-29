@@ -310,37 +310,6 @@ def main():
         sys.exit(1)
 
 
-# Create app instance for gunicorn
-def create_gunicorn_app():
-    """Create Flask app for gunicorn with full configuration."""
-    environment = os.environ.get('FLASK_ENV', 'development')
-    
-    # Create and configure Flask app
-    flask_app = create_app(environment)
-    config = get_config(environment)
-    
-    # Setup logging
-    setup_logging(flask_app, config)
-    
-    # Setup rate limiting
-    limiter = setup_rate_limiting(flask_app, config)
-    
-    # Setup error handlers
-    setup_error_handlers(flask_app)
-    
-    # Setup request logging
-    setup_request_logging(flask_app)
-    
-    # Initialize services
-    whatsapp_service, webhook_handler = initialize_services(flask_app, config)
-    
-    # Create webhook routes
-    create_webhook_routes(flask_app, webhook_handler, config.WHATSAPP_VERIFY_TOKEN)
-    
-    return flask_app
-
-# Create app instance for gunicorn
-app = create_gunicorn_app()
 
 if __name__ == '__main__':
     main()

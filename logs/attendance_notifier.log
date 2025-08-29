@@ -101,3 +101,208 @@
 2025-08-29 00:38:39,438 INFO [app] [initialize_services:255] All services initialized successfully
 2025-08-29 00:38:39,439 INFO [app] [main:297] Starting Flask application in development mode
 2025-08-29 00:38:39,439 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:19:44,671 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:19:44,672 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:19:47,541 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:19:47,542 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:19:47,542 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:21:43,950 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:21:43,951 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:21:45,927 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:21:45,928 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:21:45,929 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:21:49,222 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:21:49,223 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:21:51,585 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:21:51,586 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:21:51,586 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:22:05,702 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:22:05,703 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:22:07,537 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:22:07,538 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:22:07,538 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:22:08,638 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:22:08,640 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:22:10,683 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:22:10,684 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:22:10,684 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:29:49,452 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:29:49,453 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:29:51,819 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:29:51,820 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:29:51,821 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:30:27,452 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:30:27,453 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:30:29,488 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:30:29,489 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:30:29,489 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:39:08,862 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:39:08,863 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:39:11,016 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:39:11,017 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:39:11,017 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:39:16,229 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:39:16,230 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:39:18,349 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:39:18,351 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:39:18,352 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:39:19,973 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:39:19,974 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 01:39:19,974 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 01:42:29,647 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 01:42:29,649 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 01:42:31,617 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 01:42:36,322 INFO [app] [log_request_info:218] Request: GET / from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 01:42:36,322 INFO [app] [log_response_info:226] Response: 200 for GET / to 127.0.0.1
+2025-08-29 02:00:04,637 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:00:04,638 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:00:06,474 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:00:06,476 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:00:06,477 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:00:08,192 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:00:08,193 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:00:08,193 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:02:20,934 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:02:20,935 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:02:22,818 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:02:22,820 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:02:22,820 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:02:24,563 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:02:24,565 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:02:24,565 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:02:26,170 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:02:26,171 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:02:27,893 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:02:27,895 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:02:27,895 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:02:29,821 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:02:29,822 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:02:29,823 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:02:30,876 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:02:30,877 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:02:32,538 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:02:32,540 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:02:32,541 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:02:34,274 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:02:34,275 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:02:34,276 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:02:46,904 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:02:46,905 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:05:18,340 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:05:18,342 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:05:18,792 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:05:18,793 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:05:20,248 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:05:20,249 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:05:20,250 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:05:20,498 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:05:20,499 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:05:20,499 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:05:31,614 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:05:31,617 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:05:31,823 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:05:31,823 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:05:33,418 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:05:33,419 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:05:33,419 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:05:34,182 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:05:34,184 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:05:34,184 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:05:45,494 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:05:45,494 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:06:15,320 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:06:15,321 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:06:16,947 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:06:16,948 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:06:16,948 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:06:18,045 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:06:18,046 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:06:21,196 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:06:21,197 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:06:21,197 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:06:29,347 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:06:29,348 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:07:22,082 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:07:22,083 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:07:22,915 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:07:22,916 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:07:23,935 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:07:23,936 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:07:23,936 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:07:24,615 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:07:24,617 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:07:24,617 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:07:26,895 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:07:26,937 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:07:28,169 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:07:28,170 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:07:28,896 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:07:28,897 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:07:30,001 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:07:30,001 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:07:30,001 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:07:30,856 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:07:30,857 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:07:30,857 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:07:35,699 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:07:36,457 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:13:13,680 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:13:13,681 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:13:15,581 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:13:15,582 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:13:15,583 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:13:16,676 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:13:16,677 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:13:18,427 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:13:18,428 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:13:18,429 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:13:34,098 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:13:34,749 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:15:27,162 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:15:27,163 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:15:28,944 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:15:28,945 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:15:28,945 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:15:30,034 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:15:30,035 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:15:31,782 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:15:31,783 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:15:31,784 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:15:41,835 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:15:42,581 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:19:21,092 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:19:21,843 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:21:02,811 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:21:02,812 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:21:04,685 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:21:04,686 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:21:04,686 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:21:05,790 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:21:05,791 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:21:07,451 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:21:07,453 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:21:07,453 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:21:17,868 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:21:18,612 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
+2025-08-29 02:21:25,338 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:21:25,340 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:21:27,146 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:21:27,147 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:21:27,148 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:21:28,239 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:21:28,240 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:21:30,004 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:21:30,005 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:21:30,006 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:23:21,749 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:23:21,750 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:23:23,606 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:23:23,607 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:23:23,608 INFO [app] [main:298] Server will run on 127.0.0.1:5000
+2025-08-29 02:23:24,685 INFO [app] [setup_logging:103] Logging configured with level: DEBUG
+2025-08-29 02:23:24,686 INFO [app] [setup_rate_limiting:126] Rate limiting configured: 100 per hour
+2025-08-29 02:23:26,531 INFO [app] [initialize_services:255] All services initialized successfully
+2025-08-29 02:23:26,532 INFO [app] [main:297] Starting Flask application in development mode
+2025-08-29 02:23:26,532 INFO [app] [main:298] Server will run on 127.0.0.1:5001
+2025-08-29 02:23:31,690 INFO [app] [log_request_info:218] Request: POST /attendance-webhook from 127.0.0.1 User-Agent: curl/8.8.0
+2025-08-29 02:23:32,545 INFO [app] [log_response_info:226] Response: 500 for POST /attendance-webhook to 127.0.0.1
