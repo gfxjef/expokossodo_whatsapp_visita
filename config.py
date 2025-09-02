@@ -9,7 +9,7 @@ across environments and proper separation of secrets.
 """
 
 import os
-from typing import Dict, Any
+from typing import Dict, Any, List
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -31,11 +31,12 @@ class Config:
     WHATSAPP_TOKEN = os.environ.get('WHATSAPP_TOKEN')
     WHATSAPP_PHONE_NUMBER_ID = os.environ.get('WHATSAPP_PHONE_NUMBER_ID')
     WHATSAPP_VERIFY_TOKEN = os.environ.get('WHATSAPP_VERIFY_TOKEN')
-    WHATSAPP_RECIPIENT_NUMBER = os.environ.get('WHATSAPP_RECIPIENT_NUMBER')
+    WHATSAPP_RECIPIENT_NUMBER = os.environ.get('WHATSAPP_RECIPIENT_NUMBER')  # Fallback for single number
+    PHONE_NUMBERS_FILE = os.environ.get('PHONE_NUMBERS_FILE', 'phone_numbers.txt')
     
     # Application Configuration
     HOST = os.environ.get('HOST', '127.0.0.1')
-    PORT = int(os.environ.get('PORT', 5000))
+    PORT = int(os.environ.get('PORT', 7000))
     DEBUG = os.environ.get('FLASK_DEBUG', 'False').lower() in ('true', '1', 'yes')
     
     # Logging Configuration
@@ -72,6 +73,54 @@ class Config:
             )
     
     @classmethod
+    def get_recipient_numbers(cls) -> List[str]:
+        """
+        Get list of recipient phone numbers from file.
+        
+        Returns:
+            List of phone numbers
+            
+        Raises:
+            FileNotFoundError: If phone numbers file doesn't exist
+            ValueError: If file is empty or contains invalid numbers
+        """
+        try:
+            # Get absolute path to phone numbers file
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            phone_file_path = os.path.join(current_dir, cls.PHONE_NUMBERS_FILE)
+            
+            if not os.path.exists(phone_file_path):
+                # Fallback to single recipient number if file doesn't exist
+                if cls.WHATSAPP_RECIPIENT_NUMBER:
+                    return [cls.WHATSAPP_RECIPIENT_NUMBER]
+                else:
+                    raise FileNotFoundError(f"Phone numbers file not found: {phone_file_path}")
+            
+            with open(phone_file_path, 'r', encoding='utf-8') as file:
+                numbers = []
+                for line_num, line in enumerate(file, 1):
+                    line = line.strip()
+                    if line and not line.startswith('#'):  # Skip empty lines and comments
+                        # Validate phone number format (should be 11 digits starting with 51)
+                        if len(line) == 11 and line.startswith('51') and line.isdigit():
+                            numbers.append(f"+{line}")
+                        else:
+                            raise ValueError(f"Invalid phone number format at line {line_num}: {line}")
+                
+                if not numbers:
+                    raise ValueError("No valid phone numbers found in file")
+                
+                return numbers
+                
+        except Exception as e:
+            # Log the error and fallback to single number if available
+            if cls.WHATSAPP_RECIPIENT_NUMBER:
+                print(f"Warning: Error reading phone numbers file: {e}. Using fallback number.")
+                return [cls.WHATSAPP_RECIPIENT_NUMBER]
+            else:
+                raise
+    
+    @classmethod
     def get_whatsapp_config(cls) -> Dict[str, Any]:
         """
         Get WhatsApp-specific configuration as a dictionary.
@@ -83,7 +132,7 @@ class Config:
             'token': cls.WHATSAPP_TOKEN,
             'phone_number_id': {1: cls.WHATSAPP_PHONE_NUMBER_ID},
             'verify_token': cls.WHATSAPP_VERIFY_TOKEN,
-            'recipient_number': cls.WHATSAPP_RECIPIENT_NUMBER,
+            'recipient_numbers': cls.get_recipient_numbers(),  # Now returns list
             'logger': True,
             'debug': cls.DEBUG
         }
@@ -137,6 +186,11 @@ class TestingConfig(Config):
     WHATSAPP_PHONE_NUMBER_ID = 'test_phone_id'
     WHATSAPP_VERIFY_TOKEN = 'test_verify_token'
     WHATSAPP_RECIPIENT_NUMBER = '+1234567890'
+    
+    @classmethod
+    def get_recipient_numbers(cls) -> List[str]:
+        """Override to return test numbers."""
+        return ['+1234567890', '+0987654321']
 
 
 # Configuration mapping for easy environment selection

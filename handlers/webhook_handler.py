@@ -102,36 +102,57 @@ class AttendanceWebhookHandler:
             success, response_data = self.whatsapp_service.send_attendance_notification(attendance_data)
             
             if success:
-                # WHY: Return success response with relevant information
+                # WHY: Return success response with batch sending information
+                batch_summary = response_data.get('batch_summary', {})
+                successful_sends = response_data.get('successful_sends', [])
+                failed_sends = response_data.get('failed_sends', [])
+                
                 response = {
                     'success': True,
-                    'message': 'Attendance notification sent successfully',
+                    'message': 'Attendance notification batch completed',
                     'data': {
                         'employee_name': attendance_data['nombre'],
                         'company': attendance_data['empresa'],
                         'timestamp': datetime.now().isoformat(),
-                        'message_id': response_data.get('messages', [{}])[0].get('id'),
-                        'has_photo': 'photo' in attendance_data and bool(attendance_data['photo']),
-                        'photo_url': attendance_data.get('photo', None) if 'photo' in attendance_data else None
+                        'has_photo': response_data.get('has_photo', False),
+                        'photo_url': response_data.get('photo_url'),
+                        'batch_results': {
+                            'total_recipients': batch_summary.get('total_recipients', 0),
+                            'successful_sends': batch_summary.get('successful_sends', 0),
+                            'failed_sends': batch_summary.get('failed_sends', 0),
+                            'success_rate': batch_summary.get('success_rate', 0)
+                        },
+                        'successful_numbers': [send['number'] for send in successful_sends],
+                        'failed_numbers': [fail['number'] for fail in failed_sends] if failed_sends else []
                     }
                 }
                 
-                photo_status = " with photo" if attendance_data.get('photo') else ""
+                photo_status = " with photo" if response_data.get('has_photo') else ""
+                success_count = batch_summary.get('successful_sends', 0)
+                total_count = batch_summary.get('total_recipients', 0)
+                
                 self.logger.info(
                     f"Successfully processed attendance{photo_status} for {attendance_data['nombre']} "
-                    f"from {attendance_data['empresa']}"
+                    f"from {attendance_data['empresa']} - Sent to {success_count}/{total_count} recipients"
                 )
                 
                 return response, 200
             else:
                 # WHY: Handle notification sending failure
-                error_msg = response_data.get('error', 'Unknown error occurred')
-                self.logger.error(f"Failed to send WhatsApp notification: {error_msg}")
+                batch_summary = response_data.get('batch_summary', {})
+                error_msg = response_data.get('error', 'Batch sending failed')
+                
+                self.logger.error(f"Failed to send WhatsApp notifications: {error_msg}")
                 
                 return {
                     'success': False,
                     'error': 'Notification failed',
-                    'message': f'Failed to send WhatsApp notification: {error_msg}'
+                    'message': f'Failed to send WhatsApp notification: {error_msg}',
+                    'data': {
+                        'employee_name': attendance_data['nombre'],
+                        'company': attendance_data['empresa'],
+                        'batch_summary': batch_summary
+                    }
                 }, 500
         
         except WhatsAppServiceError as e:
